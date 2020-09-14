@@ -5,7 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-v1 in m
+v1 in m after reinstall
 
 ## Installation
 
