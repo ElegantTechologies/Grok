@@ -14,7 +14,9 @@ class GrokServiceProvider extends ServiceProvider
     public function boot()
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'eleganttechnologies');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'eleganttechnologies');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'grok');
+
+        
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
