@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout xmlns:x-grok="http://www.w3.org/1999/html">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Jetstream
@@ -60,10 +60,29 @@
                     <x-jet-nav-link href="/">Nav Link</x-jet-nav-link>
                     <x-jet-nav-link href="/">Another Link</x-jet-nav-link>
                     <x-jet-nav-link href="/">Home</x-jet-nav-link>
+                    @php
+                    $sample =<<<EOD
+                     <x-jet-nav-link href="/grok" :active="request()->routeIs('grok*')">
+                        Grok
+                    </x-jet-nav-link>
+                    EOD;
+                    $sampleEscaped =  htmlspecialchars($sample);
+                    @endphp
+                    <pre><code class="language-php">{!!  $sampleEscaped !!}</code></pre>
+
+                    And, in routes/web.php do this...
+                    <x-grok::tas-sample-from-file language="php" path="routes/_web.grok.php"/>
+                     <x-tas::parenthetical>
+                        <pre>
+                            Future
+                            ( ) Once you know routes, nix all this naming - seems verbose.
+                        </pre>
+                    </x-tas::parenthetical>
                     <hr>
                     <x-jet-responsive-nav-link href="/">responsive-Nav Link</x-jet-responsive-nav-link>
                     <x-jet-responsive-nav-link href="/">responsive-Another Link</x-jet-responsive-nav-link>
                     <x-jet-responsive-nav-link href="/">responsive-Home</x-jet-responsive-nav-link>
+
 
                     <x-jet-section-border/>
 
