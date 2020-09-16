@@ -14,6 +14,7 @@
     <a href="/grok/livewire">LiveWire</a>
     <p/>
     <a href="/grok/tas-ui-looks">TAS-UI-Looks</a>
+    {{--            Hey - how could we make this auto-discoverable? --}}
 
         </x-slot>>
     </x-grok::action-section>
@@ -40,32 +41,6 @@
                     (--> Later ) Code
 
                     ------- Tall & Sassy UI Blocks skills ----------
-                    -- UI --
-                    [X] Links to sites
-                    [X ] Links to new tabs
-                    [X ] Links to modals
-                    [X ] Links to programs
-                    [X ] Links to other pages on the site
-                    [X] Hint
-                    [X] Labeled Value with hint
-                    [ ] Labeled Value (editable) with hint
-                        [ ] int input
-                        [ ] string input
-                        [ ] money input with contraints
-                        [ ] Date
-                        [ ] Time
-                        [ ] Scheduled Date/Time --> End
-                        [ ] Pick From
-                        [ ] Flash on Change
-
-                    -- Structure --
-                    [ ] Full admin Page w/ title tagline, body, footer
-                    [ ] Tabs
-
-                    -- Fancy Flow --
-                    [ ] Back Nav
-
-                    [ ] Flash message to relevant area, like in School Twist.
 
 
                     -- Data --

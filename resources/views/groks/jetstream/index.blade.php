@@ -71,13 +71,8 @@
                     <pre><code class="language-php">{!!  $sampleEscaped !!}</code></pre>
 
                     And, in routes/web.php do this...
-                    <x-grok::tas-sample-from-file language="php" path="routes/_web.grok.php"/>
-                     <x-tas::parenthetical>
-                        <pre>
-                            Future
-                            ( ) Once you know routes, nix all this naming - seems verbose.
-                        </pre>
-                    </x-tas::parenthetical>
+                     <pre><code class="language-php">require_once(base_path('vendor/eleganttechnologies/grok/src/routes/web.php'));</code></pre>
+
                     <hr>
                     <x-jet-responsive-nav-link href="/">responsive-Nav Link</x-jet-responsive-nav-link>
                     <x-jet-responsive-nav-link href="/">responsive-Another Link</x-jet-responsive-nav-link>
@@ -88,11 +83,11 @@
 
                     <x-grok::action-section title="Logo stuff">
                         <x-slot name="description">
-                            @include('tas_sample/logo/description')
+                            @include('grok::groks/jetstream/logo/description')
                         </x-slot>
 
                         <x-slot name="content">
-                            @include('tas_sample/logo/content')
+                            @include('grok::groks/jetstream/logo/content')
                         </x-slot>
                     </x-grok::action-section>
 
@@ -100,11 +95,11 @@
 
                     <x-grok::action-section title="Titles">
                         <x-slot name="description">
-                            @include('tas_sample/title/description')
+                            @include('grok::groks/jetstream/title/description')
                         </x-slot>
 
                         <x-slot name="content">
-                            @include('tas_sample/title/content')
+                            @include('grok::groks/jetstream/title/content')
                         </x-slot>
                     </x-grok::action-section>
 
