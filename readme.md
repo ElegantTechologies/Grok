@@ -15,6 +15,11 @@ Via Composer
 $ composer require eleganttechnologies/grok
 ```
 
+[ ] Add the following line to your routes/web.php file...... oh, there must be a more laravel-ish way
+``` bash
+require_once(base_path('vendor/eleganttechnologies/grok/src/routes/web.php'));
+```
+
 ## Usage
 
 ## Change log
