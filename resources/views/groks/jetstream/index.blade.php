@@ -70,8 +70,8 @@
                     @endphp
                     <pre><code class="language-php">{!!  $sampleEscaped !!}</code></pre>
 
-                    And, in routes/web.php do this...
-                     <pre><code class="language-php">require_once(base_path('vendor/eleganttechnologies/grok/src/routes/web.php'));</code></pre>
+                    And, in routes/web.php something like this, but more relevant to your site...
+                    <x-grok::tas-sample-from-file language="php" path="packages/eleganttechnologies/grok/routes/web.php"/>
 
                     <hr>
                     <x-jet-responsive-nav-link href="/">responsive-Nav Link</x-jet-responsive-nav-link>
