@@ -19,27 +19,27 @@
                     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
                         <h3 class="text-2xl font-semibold text-gray-800">Now for a bunch of livewire stuff</h3>
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.a-a-nothing')
+                        @livewire('grok::a-a-nothing')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.a-b-almost-nothing')
+                        @livewire('grok::a-b-almost-nothing')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.a-c-nothing-but-formatted')
+                        @livewire('grok::a-c-nothing-but-formatted')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-a-button')
+                        @livewire('grok::b-a-button')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-b-button-count')
+                        @livewire('grok::b-b-button-count')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-c-button-modal')
+                        @livewire('grok::b-c-button-modal')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-d-button-modal-dialog')
+                        @livewire('grok::b-d-button-modal-dialog')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-e-button-poll-reset')
+                        @livewire('grok::b-e-button-poll-reset')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-f-button-modal-wire')
+                        @livewire('grok::b-f-button-modal-wire')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.b-f-button-modal-wire-form')
+                        @livewire('grok::b-f-button-modal-wire-form')
                         <x-jet-section-border/>
-                        @livewire('demo-ui-chunks.c-a-input')
+                        @livewire('grok::c-a-input')
                         <x-jet-section-border/>
 
 

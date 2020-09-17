@@ -31,7 +31,17 @@ class GrokServiceProvider extends ServiceProvider
         //Configure the routes offered by the application.
         // Still learning - this should work, but gives Trying to get property 'profile_photo_url' of non-object (View:
         #$this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-
+        \Livewire::component('grok::a-a-nothing', \ElegantTechnologies\Grok\Components\DemoUiChunks\AANothing::class);
+        \Livewire::component('grok::a-b-almost-nothing', \ElegantTechnologies\Grok\Components\DemoUiChunks\ABAlmostNothing::class);
+        \Livewire::component('grok::a-c-nothing-but-formatted', \App\Http\Livewire\DemoUiChunks\ACNothingButFormatted::class);
+        \Livewire::component('grok::b-a-button', \App\Http\Livewire\DemoUiChunks\BAButton::class);
+        \Livewire::component('grok::b-b-button-count', \App\Http\Livewire\DemoUiChunks\BBButtonCount::class);
+        \Livewire::component('grok::b-c-button-modal', \App\Http\Livewire\DemoUiChunks\BCButtonModal::class);
+        \Livewire::component('grok::b-d-button-modal-dialog', \App\Http\Livewire\DemoUiChunks\BDButtonModalDialog::class);
+        \Livewire::component('grok::b-e-button-poll-reset', \App\Http\Livewire\DemoUiChunks\BEButtonPollReset::class);
+        \Livewire::component('grok::b-f-button-modal-wire', \App\Http\Livewire\DemoUiChunks\BFButtonModalWire::class);
+        \Livewire::component('grok::b-f-button-modal-wire-form', \App\Http\Livewire\DemoUiChunks\BFButtonModalWireForm::class);
+        \Livewire::component('grok::c-a-input', \App\Http\Livewire\DemoUiChunks\CAInput::class);
 
     }
 
