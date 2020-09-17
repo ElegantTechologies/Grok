@@ -16,8 +16,46 @@ $ composer require eleganttechnologies/grok
 ```
 
 [ ] Add the following line to your routes/web.php file...... oh, there must be a more laravel-ish way
-``` bash
+``` php
+{{-- in 'routes/web.php' --}}
 require_once(base_path('vendor/eleganttechnologies/grok/src/routes/web.php'));
+```
+
+[ ] Add a link in the grok pages (wherever is appropriate for your site). In a fresh install of jetstream, you
+would problably add it next to the 'Dashboard' link at the top.
+``` html
+{{-- in 'resources/views/navigation-dropdown.blade.php' --}}
+
+<x-jet-nav-link href="/grok" :active="request()->routeIs('grok*')">
+    Grok
+</x-jet-nav-link>
+``` 
+
+Install (since I don't know Laravel smart enough)
+---
+[ ] Copy css and js to our public. (or make work via laravel when you are smarter)
+``` bash
+cp packages/eleganttechnologies/grok/public/css/prism.css public/css
+cp packages/eleganttechnologies/grok/public/js/prism.js public/js
+```
+
+Load the css and js.  
+[ ] Add this to 'resources/views/layouts/app.blade.php'
+``` html
+
+<!-- In <head> -->
+<head>
+    ...
+    <!-- Code highlighting 1 of 2-->
+    <link href="/css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    ...
+    <!-- Code highlighting 2 of 2 -->
+    <script src="/js/prism.js"></script>
+</body>
+
 ```
 
 ## Usage

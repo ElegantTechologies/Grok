@@ -83,11 +83,11 @@
 
                     <x-grok::action-section title="Logo stuff">
                         <x-slot name="description">
-                            @include('grok::groks/jetstream/logo/description')
+                            @include('grok::groks.jetstream.logo.description')
                         </x-slot>
 
                         <x-slot name="content">
-                            @include('grok::groks/jetstream/logo/content')
+                            @include('grok::groks.jetstream.logo.content')
                         </x-slot>
                     </x-grok::action-section>
 
@@ -95,11 +95,11 @@
 
                     <x-grok::action-section title="Titles">
                         <x-slot name="description">
-                            @include('grok::groks/jetstream/title/description')
+                            @include('grok::groks.jetstream.title.description')
                         </x-slot>
 
                         <x-slot name="content">
-                            @include('grok::groks/jetstream/title/content')
+                            @include('grok::groks.jetstream.title.content')
                         </x-slot>
                     </x-grok::action-section>
 

@@ -14,9 +14,12 @@ class GrokServiceProvider extends ServiceProvider
     public function boot()
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'eleganttechnologies');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'grok');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'grok');
 
-        
+        $this->publishes([
+            __DIR__.'/public' => public_path('eleganttechnologies/grok'),
+        ]);
+
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
@@ -24,6 +27,12 @@ class GrokServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
         }
+
+        //Configure the routes offered by the application.
+        // Still learning - this should work, but gives Trying to get property 'profile_photo_url' of non-object (View:
+        #$this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+
+
     }
 
     /**
@@ -50,7 +59,7 @@ class GrokServiceProvider extends ServiceProvider
     {
         return ['grok'];
     }
-    
+
     /**
      * Console-specific booting.
      *

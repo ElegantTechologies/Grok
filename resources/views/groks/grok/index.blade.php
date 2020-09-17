@@ -1,3 +1,7 @@
+   <!-- Code highlighting 1 of 2-->
+
+
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -37,7 +41,7 @@
                           <pre><code class="language-html">{!!  $sampleEscaped !!}</code></pre>
 
                           <hr>
-                          <x-title>Escaping</x-title>
+                          <div span="text-3xl">Escaping</div>
                           Since the browser will render html, we need to escape our samples.
                           @php
                           $sample =<<<EOL
@@ -55,7 +59,7 @@
 
                            <pre><code class="language-php">{!!  $sampleEscaped !!}</code></pre>
                           <hr>
-                           <x-title>Loading from file</x-title>
+                           <div span="text-3xl">Loading from file</div>
                           If you are loading the sample code from a file, you can do something like this...
                            @php
                           $sample =<<<EOL
@@ -69,7 +73,7 @@
                           The required parameters are 'language' and 'path', where 'path' is off the app root directory
                           and language is (php,html,javascript,console,css);
                           <hr>
-                          <x-title>Installation</x-title>
+                          <div span="text-3xl">Installation</div>
                           To install and set up code highlighting, so something like this....
                           <x-grok::tas-sample-from-file language="console" path="vendor/eleganttechnologies/grok/resources/views/groks/grok/sample_code/installationSteps.blade.php"/>
 
@@ -85,6 +89,8 @@
         </div>
     </div>
 </div>
+
+<!-- Code highlighting 2 of 2 -->
 
 
 </x-app-layout>
