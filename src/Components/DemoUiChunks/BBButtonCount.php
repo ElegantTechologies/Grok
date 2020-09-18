@@ -13,6 +13,6 @@ class BBButtonCount extends Component
     }
     public function render()
     {
-        return view('grok::livewire.demo-ui-chunks.b-b-button-count');
+        return view('grok::groks.livewire.demo-ui-chunks.b-b-button-count');
     }
 }

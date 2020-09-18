@@ -21,6 +21,6 @@ class BDButtonModalDialog extends Component
 
     public function render()
     {
-        return view('grok::livewire.demo-ui-chunks.b-d-button-modal-dialog');
+        return view('grok::groks.livewire.demo-ui-chunks.b-d-button-modal-dialog');
     }
 }
