@@ -7,7 +7,7 @@
 
     @php
     $pathOffRouteToGroks = 'packages/eleganttechnologies/grok/resources/views/groks/livewire';
-   //@include('tas::/groks/title/description',['pathOffRouteToGroks'=>$pathOffRouteToGroks])
+   //@include('tassy::/groks/title/description',['pathOffRouteToGroks'=>$pathOffRouteToGroks])
     @endphp
 
 <div class="py-12">
