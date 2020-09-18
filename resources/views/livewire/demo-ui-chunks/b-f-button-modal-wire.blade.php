@@ -23,7 +23,7 @@
             <x-slot name="title">A Dialog Modal Title</x-slot>
             <x-slot name="content">
                 <div>Note: This poll is a different instance than the main page. It resets differently.</div>
-                @livewire('demo-ui-chunks.b-e-button-poll-reset')
+                @livewire('grok::b-e-button-poll-reset')
             </x-slot>
             <x-slot name="footer">
                 <span class="text-gray-400">Your footer text goes here</span>

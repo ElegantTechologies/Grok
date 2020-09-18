@@ -29,7 +29,7 @@
                 <div>I think they just aren't the same.  We should migrate towards that, but it isn't a real
                 use case now (have the same form in two different spots).</div>
                 <div>Importantly, this demo chunk definitively shows livewire lives nicely in a modal.</div>
-                 @livewire('demo-ui-chunks.c-a-input')
+                 @livewire('grok::c-a-input')
             </x-slot>
             <x-slot name="footer">
                 <span class="text-gray-400">Your footer text goes here</span>
