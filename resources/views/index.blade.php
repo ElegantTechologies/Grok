@@ -13,7 +13,9 @@
     <p/>
     <a href="/grok/livewire">LiveWire</a>
     <p/>
-    <a href="/grok/tas-ui-looks">TAS-UI-Looks</a>
+    <a href="/grok/tas/ui-looks">TAS-UI-Looks</a>
+    <p/>
+    <a href="/grok/tas/ui-glances">TAS-UI-Glances</a>
     {{--            Hey - how could we make this auto-discoverable? --}}
 
         </x-slot>>

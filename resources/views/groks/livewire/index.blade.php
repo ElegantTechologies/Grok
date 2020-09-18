@@ -5,6 +5,10 @@
         </h2>
     </x-slot>
 
+    @php
+    $pathOffRouteToGroks = 'packages/eleganttechnologies/grok/resources/views/groks/livewire';
+   //@include('tas::/groks/title/description',['pathOffRouteToGroks'=>$pathOffRouteToGroks])
+    @endphp
 
 <div class="py-12">
 
@@ -20,6 +24,17 @@
                         <h3 class="text-2xl font-semibold text-gray-800">Now for a bunch of livewire stuff</h3>
                         <x-jet-section-border/>
                         @livewire('grok::a-a-nothing')
+<x-jet-section-border/>
+                         <x-grok::action-section title="Packaging stuff">
+                        <x-slot name="description">
+                            @include('grok::groks.livewire.packaging.description',['pathOffRouteToGroks'=>$pathOffRouteToGroks])
+                        </x-slot>
+
+                        <x-slot name="content">
+                            @include('grok::groks.livewire.packaging.content',['pathOffRouteToGroks'=>$pathOffRouteToGroks])
+                        </x-slot>
+                    </x-grok::action-section>
+
                         <x-jet-section-border/>
                         @livewire('grok::a-b-almost-nothing')
                         <x-jet-section-border/>
