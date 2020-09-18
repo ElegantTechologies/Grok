@@ -6,7 +6,7 @@
     </x-slot>
 
     @php
-    $pathOffRouteToGroks = 'packages/eleganttechnologies/grok/resources/views/groks/livewire';
+    $pathOffRouteToGroks = 'packages/eleganttechnologies/grok/resources/views/groks/livewired';
    //@include('tassy::/groks/title/description',['pathOffRouteToGroks'=>$pathOffRouteToGroks])
     @endphp
 
