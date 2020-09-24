@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-grok::grok_page_layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             LiveWire
@@ -69,4 +69,4 @@
 </div>
 
 
-</x-app-layout>
+</x-grok::grok_page_layout>

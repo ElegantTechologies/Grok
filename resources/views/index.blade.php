@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-grok::grok_page_layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Grok
@@ -142,4 +142,4 @@
           </x-slot>
      </x-grok::action-section>
 
-</x-app-layout>
+</x-grok::grok_page_layout>

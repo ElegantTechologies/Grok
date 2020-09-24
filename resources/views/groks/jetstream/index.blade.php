@@ -1,4 +1,4 @@
-<x-app-layout xmlns:x-grok="http://www.w3.org/1999/html">
+<x-grok::grok_page_layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Jetstream
@@ -123,4 +123,4 @@
     <x-jet-section-border/>
 
 
-</x-app-layout>
+</x-grok::grok_page_layout>
