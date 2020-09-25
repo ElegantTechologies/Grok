@@ -11,8 +11,11 @@ v1 in m after reinstall
 
 Via Composer
 
+
 ``` bash
-$ composer require eleganttechnologies/grok
+composer require eleganttechnologies/grok
+
+php artisan vendor:publish --Provider="ElegantTechnologies\Grok\GrokServiceProvider"
 ```
 
 [ ] Add the following line to your routes/web.php file...... oh, there must be a more laravel-ish way

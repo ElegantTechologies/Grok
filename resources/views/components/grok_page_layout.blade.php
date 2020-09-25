@@ -19,7 +19,7 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.js" defer></script>
 
 
-        <link href="/css/prism.css" rel="stylesheet" />
+        <link href="/eleganttechnologies/grok/css/prism.css" rel="stylesheet" />
 
     </head>
     <body class="font-sans antialiased">
@@ -39,7 +39,7 @@
         @livewireScripts
 
         {{--        Code Prettify--}}
-        <script src="/js/prism.js"></script>
+        <script src="/eleganttechnologies/grok/js/prism.js"></script>
 
     </body>
 </html>
