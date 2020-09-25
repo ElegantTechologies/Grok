@@ -18,8 +18,7 @@ class GrokServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/public' => public_path('eleganttechnologies/grok'),
-        ]);
-
+        ], ['ElegantTechnologies','EtGrok']);
 
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
