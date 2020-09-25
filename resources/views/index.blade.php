@@ -13,9 +13,11 @@
     <p/>
     <a href="/grok/livewire">LiveWire</a>
     <p/>
-    <a href="/grok/tassy/looks">Tassy/Looks</a>
+    <a href="/grok/tassy/looks">Tassy/UiLooks</a>
     <p/>
-    <a href="/grok/tassy/glances">Tassy/Glances</a>
+    <a href="/grok/tassy/groks_tasbranding">Tassy/Branding</a>
+    <p/>
+    <a href="/grok/tassy/glances">Tassy/UiGlances</a>
     {{--            Hey - how could we make this auto-discoverable? --}}
 
         </x-slot>>

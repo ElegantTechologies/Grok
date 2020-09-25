@@ -15,7 +15,7 @@ Via Composer
 ``` bash
 composer require eleganttechnologies/grok
 
-php artisan vendor:publish --Provider="ElegantTechnologies\Grok\GrokServiceProvider"
+php artisan vendor:publish --provider="ElegantTechnologies\Grok\GrokServiceProvider"
 ```
 
 [ ] Add the following line to your routes/web.php file...... oh, there must be a more laravel-ish way

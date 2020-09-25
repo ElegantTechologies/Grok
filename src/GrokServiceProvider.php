@@ -13,24 +13,11 @@ class GrokServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'eleganttechnologies');
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'grok');
-
-        $this->publishes([
-            __DIR__.'/public' => public_path('eleganttechnologies/grok'),
-        ], ['ElegantTechnologies','EtGrok']);
-
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
-
-        // Publishing is only necessary when using the CLI.
-        if ($this->app->runningInConsole()) {
-            $this->bootForConsole();
-        }
-
-        //Configure the routes offered by the application.
-        // Still learning - this should work, but gives Trying to get property 'profile_photo_url' of non-object (View:
-        #$this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+         /* Configure the routes offered by the application.
+            Still learning - this should work, but gives Trying to get property 'profile_photo_url' of non-object (View:
+            And for livewire, getting an alert 'this page timed out'
+            #$this->loadRoutesFrom(__DIR__.'/routes.php');
+        */
         \Livewire::component('grok::a-a-nothing', \ElegantTechnologies\Grok\Components\DemoUiChunks\AANothing::class);
         \Livewire::component('grok::a-b-almost-nothing', \ElegantTechnologies\Grok\Components\DemoUiChunks\ABAlmostNothing::class);
         \Livewire::component('grok::a-c-nothing-but-formatted', \ElegantTechnologies\Grok\Components\DemoUiChunks\ACNothingButFormatted::class);
@@ -42,6 +29,24 @@ class GrokServiceProvider extends ServiceProvider
         \Livewire::component('grok::b-f-button-modal-wire', \ElegantTechnologies\Grok\Components\DemoUiChunks\BFButtonModalWire::class);
         \Livewire::component('grok::b-f-button-modal-wire-form', \ElegantTechnologies\Grok\Components\DemoUiChunks\BFButtonModalWireForm::class);
         \Livewire::component('grok::c-a-input', \ElegantTechnologies\Grok\Components\DemoUiChunks\CAInput::class);
+
+
+
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'eleganttechnologies');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'grok');
+
+        $this->publishes([
+            __DIR__.'/public' => public_path('eleganttechnologies/grok'),
+        ], ['ElegantTechnologies','EtGrok']);
+
+        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+
+        // Publishing is only necessary when using the CLI.
+        if ($this->app->runningInConsole()) {
+            $this->bootForConsole();
+        }
+
 
     }
 
